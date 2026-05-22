@@ -1,0 +1,78 @@
+:root {
+  object-fit: contain;
+}
+
+.footer-text {
+  text-align: right;
+  line-height: 1.7;
+}
+
+.footer-text p {
+  margin: 0;
+}
+
+.footer-text a {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    gap: 16px;
+    font-size: 14px;
+  }
+
+  .about-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-grid,
+  .metrics,
+  .langs,
+  .access-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-text {
+    text-align: left;
+  }
+}
+
+@media (max-width: 700px) {
+  .topbar {
+    height: auto;
+    padding: 12px 16px;
+    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 12px 16px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 64px 0 40px;
+  }
+
+  .hero-inner {
+    padding: 0;
+  }
+
+  .service-grid,
+  .metrics,
+  .langs,
+  .access-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 54px 0;
+  }
+
+  .access-card {
+    min-height: auto;
+  }
+}
